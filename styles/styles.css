@@ -1,0 +1,26 @@
+* {
+    border: 1px solid red;
+}
+body {
+    text-align: center;
+    background-color: aquamarine;
+}
+
+img {
+    width: 30%;
+    padding: 10px 10px;
+}
+
+h1 {
+    font-size: 3em;
+}
+
+p {
+    padding: 10px 0;
+}
+
+#content {
+    background-color: white;
+    margin: 40px;
+    border: 5px solid black;
+}

@@ -1,0 +1,149 @@
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+nav a {
+    text-align: center;
+    color: #2D2E36;
+    text-decoration: none;
+    padding: 35px;
+}
+
+nav a:hover {
+    background-color: #c7cfd9;
+    color: #2D2E36;
+}
+
+#hero-msg h1, #hero-msg h4 {
+    text-align: center;
+    font-family: sans-serif, Helvetica;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+.button-box {
+    text-align: center;
+}
+
+main section {
+    text-align: center;
+}
+
+body {
+    background-color: #e7eff4;
+    font-size: 22px;
+    font-family: system-ui, Arial; 
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #dee9f3;
+}
+
+.book, .join {
+    background-color: #606f99;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+
+.book:hover, .join:hover {
+    background-color: #525f83;
+    color: white;
+}
+
+#background {
+    height: 725px;
+    background-color: #c4d1d7;
+}
+
+.msg {
+    background-color: #c8dbe9;
+    line-height: 1.5em;
+    padding: 35px;
+}
+
+.msg h2 {
+    color: #2D2E36;
+    font-family: sans-serif, Helvetica;
+}
+
+.msg p {
+    color: #2D2E36;
+    font-size: .8em;
+    padding-bottom: 15px;
+}
+
+footer {
+    background-color: #c6d3da;
+    color: #2D2E36;
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+
+footer a {
+    color: #2D2E36;
+    text-decoration: none;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+
+footer a:hover {
+    color: #484957;
+}
+
+footer p a:hover {
+    text-decoration: underline;
+}
+
+.home-title {
+    color: #2D2E36;
+    font-family: sans-serif, Helvetica;
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+h4 {
+    color: #2D2E36;
+}
+
+#logo_link {
+    padding-top: 5px;
+}
+
+.logo {
+    width: 80px;
+}
+
+h2 {
+    margin: 0;
+}
+
+.icon {
+    padding-top: 10px;
+}
+
+main section img {
+    box-sizing: border-box;
+}
+
+.card-img {
+    border: 10px solid #d9c2a3;
+}
+
+.rivers-card, .camping-card, .rapids-card {
+    margin: 200px 0;
+}
