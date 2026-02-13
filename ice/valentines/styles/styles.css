@@ -1,0 +1,51 @@
+/* Add your CSS here to style your valentines day page */
+
+/* var(-- ); */
+:root {
+    --dark-red: #C00000;
+    --red: #FF3334;
+    --pink: #FF6F77;
+    --light-pink: #FFBBC1;
+    --whiter-pink: #FFDEE3;
+    --brown: #6C3636;
+}
+
+h1 {
+    color: var(--brown);
+}
+
+img {
+    border-radius: 150px;
+    border: solid 10px var(--pink);
+}
+
+main { 
+    text-align: center;
+}
+
+h2 {
+    color: var(--dark-red);
+}
+
+p {
+    margin: 0 200px 0 200px;
+}
+
+footer {
+    text-align: right;
+    margin-top: 50px;
+    color: var(--brown);
+}
+
+body {
+    background-color:#FFDEE3;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    color:#C00000;
+    background: #FFBBC1;
+    margin: auto;
+    width: 1000px;
+    padding: 30px;
+}
