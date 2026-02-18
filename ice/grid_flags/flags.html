@@ -74,6 +74,125 @@
             background: white;
             clip-path: polygon(50% 0, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
         }
+
+        #denmark {
+            display: grid;
+            height: 200px;
+            width: 300px;
+            background: white;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 25px;
+        }
+
+        #dred1, #dred2, #dred3, #dred4 {
+            background: red;
+        }
+
+        #finland {
+            display: grid;
+            height: 200px;
+            width: 300px;
+            background: blue;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 40px;
+        }
+        
+        #fwhite1, #fwhite2, #fwhite3, #fwhite4{
+            background: white;
+        }
+
+        #benin {
+            display: grid;
+            grid-template-columns: 1fr 1.25fr;
+            height: 200px;
+            width: 300px;
+        }
+
+        #bgreen {
+            background: green;
+            grid-row: 1/3;
+        }
+
+        #byellow {
+            background: yellow;
+            grid-column: 2/3;
+        }
+
+        #bred {
+            background: red;
+            grid-column: 2/3;
+        }
+
+        #italy {
+            display: grid;
+            height: 200px;
+            width: 300px;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        #igreen {
+            background: green;
+        }
+
+        #iwhite {
+            background: white;
+        }
+
+        #ired {
+            background: red;
+        }
+
+        #car {
+            display: grid;
+            height: 200px;
+            width: 300px;
+            grid-template-rows: repeat(4, 1fr);
+            grid-template-columns: 1fr 50px 1fr;
+        }
+
+        #cablue {
+            background: blue;
+            grid-column: 1/4;
+            grid-row: 1;
+        }
+
+        #cawhite {
+            background: white;
+            grid-column: 1/4;
+            grid-row: 2;
+        }
+
+        #cagreen {
+            background: green;
+            grid-column: 1/4;
+            grid-row: 3;
+        }
+
+        #cayellow {
+            background: yellow;
+            grid-column: 1/4;
+            grid-row: 4;
+        }
+
+        #cared {
+            background: red;
+            grid-column: 2;
+            grid-row: 1/5;
+        }
+
+        #castar {
+            width: 40px;
+            aspect-ratio: 1;
+            background: yellow;
+            clip-path: polygon(50% 0, 79% 90%, 2% 35%, 98% 35%, 21% 90%);
+            grid-row: 1;
+            grid-column: 1;
+            margin: 5px;
+        }
+
+
     </style>
 </head>
 
@@ -115,6 +234,25 @@
             <div id="bgreen"></div>
             <div id="byellow"></div>
             <div id="bred"></div>
+        </div>
+        <hr>
+
+        <h2>Italy</h2>
+        <div id="italy">
+            <div id="igreen"></div>
+            <div id="iwhite"></div>
+            <div id="ired"></div>
+        </div>
+        <hr>
+
+        <h2>C.A.R.</h2>
+        <div id="car">
+            <div id="cablue"></div>
+            <div id="cawhite"></div>
+            <div id="cagreen"></div>
+            <div id="cayellow"></div>
+            <div id="cared"></div>
+            <div id="castar"></div>
         </div>
         <hr>
     </main>
