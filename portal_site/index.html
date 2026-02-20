@@ -3,57 +3,82 @@
 <head>
     <meta charset="UTF-8" />
     <title>Portal Site</title>
+    <link href="styles/style.css" rel="stylesheet">
 </head>
 <body>
     <div id="content">
         <header>
             <a id="logo_link" href="index.html">
-                <!-- <img class="logo" src="img/Logo.png"> -->
+                <img class="logo" src="img/Logo.png" alt="logo">
             </a>
             <nav>
-                <a href="">Home</a>
-                <a href="">WWR</a>
-                <a href="">ICE</a>
-                <a href="">About me</a>
+                <ul>                
+                    <li><a href="">Home</a></li>
+                    <li><a href="">WWR</a></li>
+                    <li><a href="">ICE</a></li>
+                    <li><a href="">About me</a></li>
+                </ul>
             </nav>
         </header>
         <div id="hero-box">
-            <img id="hero_img" href="">
-            <h2 id="hero_msg">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+            <img id="hero-img" src="img/hero-img.png" alt="hero-img">
+            <div id="hero-msg">
+                <h2>Exploring web design and development through creative projects</h2>
+            </div>
         </div>
         <main class="home_grid">
             <section class="wwr-card">
-                <img class="card-img" src="">
-                <h3>WWR</h3>
+                <a href="" class="card-link">
+                    <img class="card-img" src="img/wwr-img.png">
+                    <h3>WWR</h3>
+                </a>
+                    <p>Developed a white water rafting website focused on adventure and safety. This project highlights guided trips, strong branding, and a clean, responsive layout.</p>
             </section>
             <section class="ice-card">
-                <img class="card-img" src="">
-                <h3>ICE</h3>
+                <a href="" class="card-link">
+                    <img class="card-img" src="img/ice-img.png">
+                    <h3>ICE</h3>
+                </a>
+                    <p> Worked on five ICE challenge tasks, each lasting about an hour, practicing how to think through HTML/CSS from a finished design by applying what I learned.</p>
             </section>
             <section class="about-card">
-                <img class="card-img" src="">
-                <h3>About Me</h3>
+                <a href="" class="card-link">
+                    <img class="card-img" src="img/about-img.png">
+                    <h3>About Me</h3>
+                </a>
+                    <p>Learn more about me and my journey in web design and development. I enjoy creating clean, user-friendly websites that combine design and code.</p>
             </section>
         </main>
-        <footer>
-            <a id="logo_link" href="index.html">
-                <!-- <img class="logo" src="img/Logo.png"> -->
-            </a>
-            <p><a href="">WWR</a></p>
-            <p><a href="">ICE</a></p>
-            <p><a href="">About Me</a></p>
-            <div class="social">
+        <footer class="site-footer">
+            <div class="footer-row footer-top">
+                <a class="footer-logo" href="index.html">
+                <img class="logo" src="img/Logo.png" alt="Logo">
+                </a>
+
+                <nav class="footer-links" aria-label="Footer">
+                <a href="">Home</a>
+                <a href="">WWR</a>
+                <a href="">ICE</a>
+                <a href="">About Me</a>
+                </nav>
+
+                <div class="footer-social">
+                <a href="https://instagram.com" target="_blank">
+                    <img class="icon" src="img/instagram.png" alt="Instagram">
+                </a>
                 <a href="https://facebook.com" target="_blank">
-                    <img src="img/facebook.png" alt="fb icon">
+                    <img class="icon" src="img/facebook.png" alt="Facebook">
                 </a>
                 <a href="https://twitter.com" target="_blank">
-                    <img src="img/twitter.png" alt="twitter icon">
+                    <img class="icon" src="img/twitter.png" alt="Twitter">
                 </a>
-                <a href="https://instagram.com" target="_blank">
-                    <img src="img/instagram.png" alt="ig icon">
-                </a>
+                </div>
             </div>
-        </footer>
+
+            <div class="footer-row footer-bottom">
+                <p class="footer-copy">© 2026 Honami's Portal Site. All rights reserved.</p>
+            </div>
+            </footer>
     </div>
 </body>
 </html>
