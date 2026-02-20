@@ -99,13 +99,6 @@ h3:hover {
     color: #7f5539;
 }
 
-/* Home Grid Responsive Design */
-@media (max-width: 768px) {
-  .home_grid {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* Footer */
 .site-footer {
   background: #ede0d4;
@@ -169,8 +162,21 @@ h3:hover {
   border-radius: 10%;
 }
 
-/* Footer responsive design */
+/* Responsive Design */
 @media (max-width: 700px) {
+
+h2 {
+    font-size: 20px;
+    display: flex;
+    flex-wrap: wrap; 
+}
+    
+/* Home Grid */
+  .home_grid {
+    grid-template-columns: 1fr;
+  }
+
+/* Footer */
   .site-footer {
     padding: 20px;
   }
