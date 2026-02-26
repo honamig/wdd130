@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Feed Sign Up</title>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        body {
+            background: rgb(120, 96, 64);
+            margin-top: 40px;
+        }
+
+        #formContainer {
+            background: white;
+            width: 400px;
+            min-height: 600px;
+            text-align: center;
+            margin: auto;
+            border-radius: 40px;
+            border: 10px solid rgb(31, 31, 81);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .hero_title {
+            position: relative;
+            width: 100%;
+        }
+
+        .hero_title img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            object-position: top;;
+            display: block;
+            border-radius: 30px 30px 0 0 ;
+        }
+
+        .hero_title h1,
+        .hero_title h2 {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            color: white;
+            text-shadow: 2px 2px black;
+        }
+
+        .hero_title h1 {
+            top: 40%;
+        }
+
+        .hero_title h2 {
+            top: 60%;
+        }
+
+        .sign-up_title {
+            margin: 10px;
+        }
+
+        #closeBtn {
+            position: absolute;
+            top: 15px;
+            left: 20px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            text-align: left;
+            margin: 15px 20px 15px 20px;
+        }
+
+        #newsletter, #conditions, .submit {
+            margin-top: 20px;
+        }
+
+        .books {
+            display: grid;
+            width: 100%;
+            grid-template-columns: repeat(5, 1fr);
+            column-gap: 5px;
+            margin-top: 30px;
+        }
+
+        .books img {
+            width: 100%;
+
+        }
+
+        
+
+    </style>
+
+
+
+
+</head>
+
+<body>
+    <div id="formContainer">
+        <div class="hero_title">
+            <h1>Daily Feed</h1>
+            <h2>Scripture a Day</h2>
+            <img src="images/jesus_feeds_5000.jpeg">
+        </div>
+
+        <h3 class="sign-up_title">Sign Up for Daily Scripture Feed</h3>
+        <form id="myForm">
+
+            <button type="button" id="closeBtn">X</button>
+
+            <div class="form-row">
+                <label for="username">User Name:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-row">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <div class="form-row">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-row">
+                <label>Gender:</label>
+                <div>
+                    <input type="radio" id="male" name="gender" value="male" required>
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female" required>
+                    <label for="female">Female</label>
+                </div>
+            </div>
+
+            <section>
+                <input type="checkbox" id="newsletter" name="newsletter">
+                <label for="newsletter">Subscribe to newsletter</label>
+            </section>
+
+            <section>
+                <input type="checkbox" id="conditions" name="conditions" required>
+                <label for="conditions">I acknowledge the terms and conditions</label>
+            </section>
+
+            <section>
+                <button class="submit" type="submit">Submit</button>
+            </section>
+        </form>
+
+        <div class="books">
+            <img src="images/book_of_mormon.webp">
+            <img src="images/doctrine_and_covenants.webp">
+            <img src="images/new_testament.webp">
+            <img src="images/old_testament.webp">
+            <img src="images/pearl_of_great_price.webp">
+        </div>
+    </div>
+
+    <div id="output"></div>
+
+    <script>
+        // Here is some Javascript to start looking forward to wdd131
+        document.getElementById("closeBtn").addEventListener("click", function () {
+            document.getElementById("formContainer").style.display = "none";
+         });
+        const form = document.getElementById('myForm');
+        const output = document.getElementById('output');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault(); // Stop form from actually submitting
+
+            const formData = new FormData(form);
+            const entries = [];
+
+            for (const [key, value] of formData.entries()) {
+                if (key == "password") {
+                    entries.push(`<strong>${key}</strong>: ${value} (you should probably encrypt the password)`);
+                } else {
+                    entries.push(`<strong>${key}</strong>: ${value}`);
+                }
+            }
+
+            output.innerHTML = `
+            <br>  
+            <h3>Here is the data that would be sent to the server:</h3>
+            <ul>
+                ${entries.map(item => `<li>${item}</li>`).join('')}
+            </ul>
+            `;
+                });
+    </script>
+
+</body>
+
+</html>
