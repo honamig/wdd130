@@ -58,6 +58,8 @@ h2 {
     color: #7f5539;
 }
 
+/* -- HOME PAGE -- */
+
 /* Home grid */
 .home_grid {
     display: grid;
@@ -98,6 +100,21 @@ h3:hover {
     line-height: 1.4;
     color: #7f5539;
 }
+
+/* -- ICE PAGE -- */
+
+.ice-page {
+  text-align: center;
+}
+
+.ice-project h2 {
+  margin: 5px;
+}
+
+.ice-project {
+  margin-bottom: 40px;
+}
+
 
 /* Footer */
 .site-footer {
@@ -162,13 +179,13 @@ h3:hover {
   border-radius: 10%;
 }
 
-/* Responsive Design */
+/* -- Responsive Design -- */
 @media (max-width: 700px) {
 
 h2 {
     font-size: 20px;
-    display: flex;
     flex-wrap: wrap; 
+    text-align: center;
 }
     
 /* Home Grid */
