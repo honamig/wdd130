@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* ================== */
+/*    HERO            */
+/* ================== */
+
+#hero {
+    background: black;
+    display: flex;
+    flex-direction: column;
+}
+
+#hero-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 130px);
+    align-items: stretch;
+}
+
+#hero-box {
+    overflow: hidden;
+    min-width: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+#hero-img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: right top;
+}
+
+#hero-msg {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 40px;
+    min-width: 0;
+}
+
+.heading {
+    font-size: 2.5rem;
+    font-family: "Exo 2";
+    font-weight: 800;
+    margin-bottom: 16px;
+    color: #D4AF37;
+}
+
+.second-heading {
+    font-size: 1.5rem;
+    font-family: "Exo 2";
+    font-weight: 600;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.sub-heading {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #ccc;
+    margin-bottom: 32px;
+}
+
+.button-box {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.resume_button,
+.about-me_button {
+    display: inline-block;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-family: "Exo 2";
+    font-weight: 700;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+    border-radius: 4px;
+    transition: opacity 0.2s;
+}
+
+.resume_button {
+    background-color: #D4AF37;
+    color: black;
+}
+
+.about-me_button {
+    background-color: transparent;
+    color: #D4AF37;
+    border: 2px solid #D4AF37;
+}
+
+.resume_button:hover,
+.about-me_button:hover {
+    opacity: 0.75;
+}
+
+#division {
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+}
+
+/* ================== */
+/*    MAIN CARD       */
+/* ================== */
+
+.main-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: black;
+    color: white;
+    border-bottom: 1.5px solid #D4AF37;
+}
+
+/* About Me */
+#about-me {
+    grid-column: 1 / -1;
+    border-bottom: 1.5px solid #D4AF37;
+    padding: 40px;
+}
+
+.about-me-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.about-me_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.about-me-text h2 {
+    color: #D4AF37;
+    font-family: "Exo 2";
+    font-size: 1.5rem;
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.about-me-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-me-text p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #ddd;
+    max-width: 450px;
+    text-align: center;
+}
+
+/* Experience */
+#experience {
+    padding: 40px;
+    border-right: 1.5px solid #D4AF37;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+}
+
+#experience h2 {
+    color: #D4AF37;
+    font-family: "Exo 2";
+    font-size: 1.5rem;
+}
+
+#experience p {
+    font-size: 0.85rem;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.experience_button {
+    display: block;
+    background-color: #D4AF37;
+    color: black;
+    padding: 10px 0;
+    text-decoration: none;
+    font-family: "Exo 2";
+    font-weight: 600;
+    border-radius: 4px;
+    width: 200px;
+    text-align: center;
+    transition: background-color 0.2s;
+}
+
+.experience_button:hover {
+    background-color: #b8972e;
+}
+
+/* Software */
+
+#software {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    text-align: center;
+    min-height: 200px;
+}
+
+#software h2 {
+    color: #D4AF37;
+    font-family: "Exo 2";
+    font-size: 1.5rem;
+}
+
+#software p {
+    font-size: 0.85rem;
+    color: #ccc;
+}
+
+#software a {
+    display: flex;
+    justify-content: center;
+}
+
+#software a img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    background-color: #D4AF37;
+    border-radius: 16px;
+    padding: 16px;
+    display: block;
+    transition: opacity 0.2s;
+    margin-top: 20px;
+}
+
+#software a img:hover {
+    opacity: 0.8;
+}
+
+/* Contact */
+#contact {
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 50px 40px;
+    border-top: 1.5px solid #D4AF37;
+}
+
+#contact h2 {
+    color: #D4AF37;
+    font-family: "Exo 2";
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.contact-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.contact-info {
+    list-style: disc;
+    color: white;
+    text-align: left;
+    padding-left: 1.2em;
+}
+
+.contact-info li {
+    margin: 8px 0;
+    font-size: 0.9rem;
+}
+
+.contact-info a {
+    color: white;
+    text-decoration: none;
+    display: inline;
+}
+
+.contact-info a:hover {
+    color: #D4AF37;
+}
+
+.logo_links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo_links img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 8px;
+    background-color: transparent;
+    padding: 0;
+    transition: opacity 0.2s;
+}
+
+.logo_links img:hover {
+    opacity: 0.8;
+}
+
+/* ================== */
+/*    MOBILE VIEW     */
+/* ================== */
+
+@media (max-width: 768px) {
+    #hero-top {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    #hero-box {
+        height: 50vh;
+    }
+
+    #hero-img {
+        object-position: center top;
+    }
+
+    #hero-msg {
+        padding: 30px 20px;
+    }
+
+    .heading {
+        font-size: 1.5rem;
+    }
+
+    .second-heading {
+        font-size: 1rem;
+    }
+
+    .sub-heading {
+        font-size: 0.85rem;
+    }
+
+    .main-card {
+        grid-template-columns: 1fr;
+    }
+
+    #about-me {
+        grid-column: 1;
+    }
+
+    .about-me-body {
+        flex-direction: column;
+    }
+
+    .about-me_img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #experience {
+        border-right: none;
+        border-bottom: 1.5px solid #D4AF37;
+    }
+}

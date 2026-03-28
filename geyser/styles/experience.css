@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.content {
+    background: black;
+    color: white;
+    font-family: "Open Sans";
+    min-height: 100vh;
+}
+
+/* Page Title */
+.page-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px;
+    border-bottom: 1.5px solid #D4AF37;
+}
+
+.page-title h1 {
+    color: #D4AF37;
+    font-family: "Exo 2";
+    font-size: 2rem;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    flex-direction: column;
+}
+
+/* common card style */
+.missionary,
+.byui,
+.high-school {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 60px 80px;
+    border-bottom: 1.5px solid #D4AF37;
+    gap: 60px;
+}
+
+/* Missionary */
+.missionary h2 {
+    color: #D4AF37;
+    font-family: "Exo 2";
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.missionary p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+/* BYU-Idaho */
+.byui {
+    direction: rtl;
+}
+
+.byui h2 {
+    color: #D4AF37;
+    font-family: "Exo 2";
+    font-size: 1.5rem;
+    text-align: center;
+    direction: ltr;
+}
+
+.byui p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #ddd;
+    direction: ltr;
+    text-align: left;
+}
+
+/* Discount Tire */
+.high-school h2 {
+    color: #D4AF37;
+    font-family: "Exo 2";
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.high-school p {
+    font-size: 0.9rem;
+    line-height: 1.8;
+    color: #ddd;
+}
+
+/* footer */
+footer {
+    background: black;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-top: 1.5px solid #D4AF37;
+    font-family: "Exo 2";
+    padding: 10px 0 20px 0;
+}
+
+footer nav {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #D4AF37;
+    font-family: "Exo 2";
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .missionary,
+    .byui,
+    .high-school {
+        grid-template-columns: 1fr;
+        padding: 40px 20px;
+        gap: 20px;
+        direction: ltr;
+    }
+
+    .missionary h2,
+    .byui h2,
+    .high-school h2 {
+        text-align: left;
+    }
+}

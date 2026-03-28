@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* ================== */
+/*    BASE            */
+/* ================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#content {
+    background: black;
+    color: white;
+    font-family: "Open Sans";
+}
+
+
+/* ================== */
+/*    HEADER / NAV    */
+/* ================== */
+
+header {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1.5px solid #D4AF37;
+    font-family: "Exo 2";
+    padding: 10px 0 20px 0;
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    padding-left: 40px;
+}
+
+nav {
+    flex: 1;
+}
+
+nav a {
+    text-decoration: none;
+    color: #D4AF37;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+/* ================== */
+/*    FOOTER          */
+/* ================== */
+
+footer {
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-family: "Exo 2";
+    padding: 40px 0;
+    border-top: 1.5px solid #D4AF37;
+}
