@@ -52,7 +52,7 @@
     font-size: 1.5rem;
     font-family: "Exo 2";
     font-weight: 600;
-    color: white;
+    color: #E2725B;
     margin-bottom: 16px;
 }
 
@@ -78,7 +78,7 @@
     font-weight: 700;
     font-size: 0.85rem;
     letter-spacing: 0.05em;
-    border-radius: 4px;
+    border-radius: 40px;
     transition: opacity 0.2s;
 }
 
@@ -89,8 +89,8 @@
 
 .about-me_button {
     background-color: transparent;
-    color: #D4AF37;
-    border: 2px solid #D4AF37;
+    color: #E2725B;
+    border: 2px solid #E2725B;
 }
 
 .resume_button:hover,
@@ -133,11 +133,11 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 20px;
 }
 
 .about-me-text h2 {
-    color: #D4AF37;
+    color: #E2725B;
     font-family: "Exo 2";
     font-size: 1.5rem;
     margin-bottom: 16px;
@@ -172,7 +172,7 @@
 }
 
 #experience h2 {
-    color: #D4AF37;
+    color: #E2725B;
     font-family: "Exo 2";
     font-size: 1.5rem;
 }
@@ -215,7 +215,7 @@
 }
 
 #software h2 {
-    color: #D4AF37;
+    color: #E2725B;
     font-family: "Exo 2";
     font-size: 1.5rem;
 }
@@ -256,7 +256,7 @@
 }
 
 #contact h2 {
-    color: #D4AF37;
+    color: #E2725B;
     font-family: "Exo 2";
     font-size: 1.8rem;
     margin-bottom: 30px;
