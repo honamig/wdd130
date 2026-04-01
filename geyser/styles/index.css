@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* Hero */
 
+/* Hero */
 #hero {
     background: black;
     display: flex;
@@ -102,9 +102,7 @@
     margin-top: 40px;
 }
 
-/* ================== */
-/*    MAIN CARD       */
-/* ================== */
+/* Main card */
 
 .main-card {
     display: grid;
