@@ -23,6 +23,13 @@
     font-size: 2rem;
 }
 
+.page-title img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    filter: invert(1);
+}
+
 /* Cards */
 .cards {
     display: flex;
@@ -32,7 +39,7 @@
 /* common card style */
 .missionary,
 .byui,
-.high-school {
+.discount-tire {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -77,69 +84,53 @@
 }
 
 /* Discount Tire */
-.high-school h2 {
+.discount-tire h2 {
     color: #E2725B;
     font-family: "Exo 2";
     font-size: 1.5rem;
     text-align: center;
 }
 
-.high-school p {
+.discount-tire p {
     font-size: 0.9rem;
     line-height: 1.8;
     color: #ddd;
-}
-
-/* footer */
-footer {
-    background: black;
-    display: flex;
-    align-items: center;
-    width: 100%;
-    border-top: 1.5px solid #D4AF37;
-    font-family: "Exo 2";
-    padding: 10px 0 20px 0;
-}
-
-footer nav {
-    flex: 1;
-    display: flex;
-    justify-content: space-evenly;
-}
-
-footer nav ul {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
-
-footer nav a {
-    text-decoration: none;
-    color: #D4AF37;
-    font-family: "Exo 2";
-}
-
-footer nav a:hover {
-    text-decoration: underline;
 }
 
 /* Mobile */
 @media (max-width: 768px) {
     .missionary,
     .byui,
-    .high-school {
+    .discount-tire {
         grid-template-columns: 1fr;
-        padding: 40px 20px;
-        gap: 20px;
+        padding: 32px 20px;
+        gap: 16px;
         direction: ltr;
     }
 
     .missionary h2,
     .byui h2,
-    .high-school h2 {
+    .discount-tire h2 {
         text-align: left;
+        font-size: 1.2rem;
+    }
+
+    .missionary p,
+    .byui p,
+    .discount-tire p {
+        font-size: 0.85rem;
+    }
+
+    .page-title {
+        padding: 24px 20px;
+    }
+
+    .page-title h1 {
+        font-size: 1.5rem;
+    }
+
+    .page-title img {
+        width: 40px;
+        height: 40px;
     }
 }

@@ -1,9 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* ================== */
-/*    BASE            */
-/* ================== */
-
 * {
     margin: 0;
     padding: 0;
@@ -17,9 +13,7 @@
 }
 
 
-/* ================== */
-/*    HEADER / NAV    */
-/* ================== */
+/* Header and nav */
 
 header {
     background: black;
@@ -53,9 +47,7 @@ nav ul {
     list-style: none;
 }
 
-/* ================== */
-/*    FOOTER          */
-/* ================== */
+/* Footer */
 
 footer {
     background: black;
@@ -66,4 +58,67 @@ footer {
     font-family: "Exo 2";
     padding: 40px 0;
     border-top: 1.5px solid #D4AF37;
+}
+
+footer nav {
+    flex: 1;
+}
+
+footer nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+footer nav a {
+    text-decoration: none;
+    color: #D4AF37;
+    font-size: 0.9rem;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 16px 0;
+        gap: 12px;
+    }
+
+    .logo {
+        width: 80px;
+        height: 64px;
+        padding-left: 0;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 8px 16px;
+        padding: 0 16px;
+    }
+
+    nav a {
+        font-size: 0.85rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 24px 16px;
+    }
+
+    footer nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
 }

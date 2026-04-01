@@ -1,8 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-/* ================== */
-/*    HERO            */
-/* ================== */
+/* Hero */
 
 #hero {
     background: black;
@@ -98,7 +96,7 @@
     opacity: 0.75;
 }
 
-#division {
+#partical {
     width: 100%;
     height: auto;
     margin-top: 40px;
@@ -202,7 +200,6 @@
 }
 
 /* Software */
-
 #software {
     padding: 40px;
     display: flex;
@@ -312,18 +309,23 @@
     opacity: 0.8;
 }
 
-/* ================== */
-/*    MOBILE VIEW     */
-/* ================== */
+/* Mobile */
 
 @media (max-width: 768px) {
+    /* Hero */
     #hero-top {
         grid-template-columns: 1fr;
         height: auto;
+        direction: rtl;
+    }
+
+    #hero-top > * {
+        direction: ltr;
     }
 
     #hero-box {
-        height: 50vh;
+        height: 45vw;
+        min-height: 200px;
     }
 
     #hero-img {
@@ -335,17 +337,23 @@
     }
 
     .heading {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
     }
 
     .second-heading {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .sub-heading {
         font-size: 0.85rem;
     }
 
+    .button-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    /* Main Card */
     .main-card {
         grid-template-columns: 1fr;
     }
@@ -355,16 +363,44 @@
     }
 
     .about-me-body {
-        flex-direction: column;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        text-align: center;
     }
 
     .about-me_img {
-        width: 120px;
-        height: 120px;
+        width: 100%;
+        max-width: 300px;
+        height: 220px;
+        margin: 0 auto;
     }
 
     #experience {
         border-right: none;
         border-bottom: 1.5px solid #D4AF37;
+    }
+
+    .experience_button {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* Contact */
+    .contact-body {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .logo_links {
+        gap: 16px;
+    }
+
+    .logo_links img {
+        width: 48px;
+        height: 48px;
+    }
+
+    #contact {
+        padding: 40px 20px;
     }
 }
